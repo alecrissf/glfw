@@ -104,3 +104,5 @@ project "GLFW"
   filter "configurations:Release"
     runtime "Release"
     optimize "on"
+
+if _ACTION == "clean" then os.rmdir("build") end
